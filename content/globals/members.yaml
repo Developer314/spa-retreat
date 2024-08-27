@@ -1,0 +1,99 @@
+title: Members
+data:
+  members:
+    -
+      id: m0b1zfer
+      name: 'Emily Wilson'
+      speciality: 'Wellness Therapist'
+      image: img/team/specialist_1.jpeg
+      social_media:
+        -
+          id: m0b1ziw8
+          icon: twitter
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b1zjxt
+          icon: facebook-f
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b1zkp5
+          icon: linkedin-in
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b1zm49
+          icon: instagram
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: new_set
+      enabled: true
+    -
+      id: m0b20a9c
+      name: 'Charlotte Lee'
+      speciality: 'Spa Therapist'
+      image: img/team/specialist_2.jpeg
+      social_media:
+        -
+          id: m0b20lwr
+          icon: twitter
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b20n7i
+          icon: facebook-f
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b20o71
+          icon: linkedin-in
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b20qbe
+          icon: instagram
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: new_set
+      enabled: true
+    -
+      id: m0b20xie
+      name: 'Abigail Rose'
+      speciality: 'Beauty Specialist'
+      image: img/team/specialist_3.jpeg
+      social_media:
+        -
+          id: m0b21g4q
+          icon: twitter
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b21hkj
+          icon: facebook-f
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b21i9w
+          icon: linkedin-in
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b21izg
+          icon: instagram
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: new_set
+      enabled: true
+    -
+      id: m0b21p7n
+      name: 'Harriet Thompson'
+      speciality: 'Skincare Expert'
+      image: img/team/specialist_4.jpeg
+      social_media:
+        -
+          id: m0b229cs
+          icon: twitter
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b22avr
+          icon: facebook-f
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b22c3v
+          icon: linkedin-in
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+        -
+          id: m0b22cy1
+          icon: instagram
+          link: 'https://www.linkedin.com/company/recolve-314-digital/'
+      type: new_set
+      enabled: true

@@ -1,0 +1,39 @@
+title: Testimonials
+data:
+  testimonials:
+    -
+      id: m0ayhr2a
+      name: 'Emily Wilson'
+      profession: 'Marketing Manager'
+      image: img/team/specialist_1.jpeg
+      rating: 4
+      testimonial_data: 'Exceptional experience at Spa Retreat! Skilled therapists, serene ambiance, and tailored treatments melted away stress and left me feeling refreshed, renewed, and rejuvenated. Highly recommended for ultimate relaxation!'
+      type: new_set
+      enabled: true
+    -
+      id: m0ayikdb
+      name: 'Charlotte Lee'
+      profession: 'Marketing Manager'
+      image: img/team/specialist_2.jpeg
+      rating: 5
+      testimonial_data: 'Exceptional experience at Spa Retreat! Skilled therapists, serene ambiance, and tailored treatments melted away stress and left me feeling refreshed, renewed, and rejuvenated. Highly recommended for ultimate relaxation!'
+      type: new_set
+      enabled: true
+    -
+      id: m0ayj31y
+      name: 'Abigail Rose'
+      profession: 'Marketing Manager'
+      image: img/team/specialist_3.jpeg
+      rating: 3
+      testimonial_data: 'Exceptional experience at Spa Retreat! Skilled therapists, serene ambiance, and tailored treatments melted away stress and left me feeling refreshed, renewed, and rejuvenated. Highly recommended for ultimate relaxation!'
+      type: new_set
+      enabled: true
+    -
+      id: m0ayjlfu
+      name: 'Harriet Thompson'
+      profession: 'Marketing Manager'
+      image: img/team/specialist_4.jpeg
+      rating: 2
+      testimonial_data: 'Exceptional experience at Spa Retreat! Skilled therapists, serene ambiance, and tailored treatments melted away stress and left me feeling refreshed, renewed, and rejuvenated. Highly recommended for ultimate relaxation!'
+      type: new_set
+      enabled: true

@@ -1,0 +1,105 @@
+title: Gallery
+data:
+  gallery:
+    -
+      id: m0aqymkk
+      category: massage_therapies
+      images:
+        - img/our_gallery/message_therapies_1.jpg
+        - img/our_gallery/message_therapies_10.jpeg
+        - img/our_gallery/message_therapies_11.jpg
+        - img/our_gallery/message_therapies_12.jpeg
+        - img/our_gallery/message_therapies_13.jpg
+        - img/our_gallery/message_therapies_14.jpg
+        - img/our_gallery/message_therapies_2.jpg
+        - img/our_gallery/message_therapies_3.jpg
+        - img/our_gallery/message_therapies_4.jpg
+        - img/our_gallery/message_therapies_5.jpg
+        - img/our_gallery/message_therapies_6.jpg
+        - img/our_gallery/message_therapies_7.jpg
+        - img/our_gallery/message_therapies_8.jpg
+        - img/our_gallery/message_therapies_9.jpeg
+      type: galleries
+      enabled: true
+    -
+      id: m0arli3g
+      category: facial_treatments
+      images:
+        - img/our_gallery/facial_treatment_9.jpg
+        - img/our_gallery/facial_treatment_1.jpg
+        - img/our_gallery/facial_treatment_10.jpg
+        - img/our_gallery/facial_treatment_11.jpg
+        - img/our_gallery/facial_treatment_12.jpg
+        - img/our_gallery/facial_treatment_2.jpg
+        - img/our_gallery/facial_treatment_3.jpg
+        - img/our_gallery/facial_treatment_4.jpg
+        - img/our_gallery/facial_treatment_5.jpg
+        - img/our_gallery/facial_treatment_6.jpg
+        - img/our_gallery/facial_treatment_7.jpg
+        - img/our_gallery/facial_treatment_8.jpg
+      type: galleries
+      enabled: true
+    -
+      id: m0art0vv
+      category: body_treatments
+      images:
+        - img/our_gallery/body_treatment_1.jpg
+        - img/our_gallery/body_treatment_10.jpg
+        - img/our_gallery/body_treatment_11.jpg
+        - img/our_gallery/body_treatment_12.jpg
+        - img/our_gallery/body_treatment_2.jpg
+        - img/our_gallery/body_treatment_3.jpg
+        - img/our_gallery/body_treatment_4.jpg
+        - img/our_gallery/body_treatment_5.jpg
+        - img/our_gallery/body_treatment_6.jpg
+        - img/our_gallery/body_treatment_7.jpg
+        - img/our_gallery/body_treatment_8.jpg
+        - img/our_gallery/body_treatment_9.jpg
+      type: galleries
+      enabled: true
+    -
+      id: m0arzpa3
+      category: hydrotherapy
+      images:
+        - img/our_gallery/hydrotherapy_9.jpg
+        - img/our_gallery/hydrotherapy_8.jpg
+        - img/our_gallery/hydrotherapy_7.jpg
+        - img/our_gallery/hydrotherapy_6.jpg
+        - img/our_gallery/hydrotherapy_5.jpg
+        - img/our_gallery/hydrotherapy_4.jpg
+        - img/our_gallery/hydrotherapy_3.jpg
+        - img/our_gallery/hydrotherapy_2.jpg
+        - img/our_gallery/hydrotherapy_12.jpg
+        - img/our_gallery/hydrotherapy_11.jpg
+        - img/our_gallery/hydrotherapy_10.jpg
+        - img/our_gallery/hydrotherapy_1.jpg
+      type: galleries
+      enabled: true
+    -
+      id: m0as90uq
+      category: waxing_and_tinting
+      images:
+        - img/our_gallery/vaxing_tinting_1.jpeg
+        - img/our_gallery/vaxing_tinting_2.jpeg
+        - img/our_gallery/vaxing_tinting_3.jpeg
+        - img/our_gallery/vaxing_tinting_4.jpeg
+        - img/our_gallery/vaxing_tinting_5.jpeg
+        - img/our_gallery/vaxing_tinting_6.jpeg
+        - img/our_gallery/vaxing_tinting_7.jpeg
+        - img/our_gallery/vaxing_tinting_8.jpeg
+      type: galleries
+      enabled: true
+    -
+      id: m0ashdhq
+      category: skincare_services
+      images:
+        - img/our_gallery/skin_care_8.jpeg
+        - img/our_gallery/skin_care_7.jpeg
+        - img/our_gallery/skin_care_6.jpeg
+        - img/our_gallery/skin_care_5.jpeg
+        - img/our_gallery/skin_care_4.jpeg
+        - img/our_gallery/skin_care_3.jpeg
+        - img/our_gallery/skin_care_2.jpeg
+        - img/our_gallery/skin_care_1.jpeg
+      type: galleries
+      enabled: true

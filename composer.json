@@ -1,0 +1,9 @@
+{
+    "name": "developer314/spa-retreat",
+    "extra": {
+        "statamic": {
+            "name": "Spa Retreat",
+            "description": "Spa Retreat Statamic starter kit"
+        }
+    }
+}

@@ -1,0 +1,107 @@
+title: Pricing
+data:
+  pricing:
+    -
+      id: m0b0xfi7
+      plan_name: 'GOLD PLAN'
+      currency: dollar
+      frequency: Monthly
+      price: '100'
+      features:
+        -
+          id: m0b0xjo9
+          feature: 'Facial Massage'
+        -
+          id: m0b0xl2a
+          feature: 'Facial Massage'
+        -
+          id: m0b0xm77
+          feature: 'Facial Massage'
+        -
+          id: m0b0xnnn
+          feature: 'Facial Massage'
+        -
+          id: m0b0xpuw
+          feature: 'Facial Massage'
+      button_title: 'Order Now'
+      button_link: /contact
+      type: new_set
+      enabled: true
+    -
+      id: m0b0xtde
+      plan_name: 'SILVER PLAN'
+      currency: dollar
+      frequency: Monthly
+      price: '100'
+      features:
+        -
+          id: m0b0xyc2
+          feature: 'Facial Massage'
+        -
+          id: m0b0xzje
+          feature: 'Facial Massage'
+        -
+          id: m0b0y09t
+          feature: 'Facial Massage'
+        -
+          id: m0b0y13r
+          feature: 'Facial Massage'
+        -
+          id: m0b0y1wr
+          feature: 'Facial Massage'
+      button_title: 'Order Now'
+      button_link: /contact
+      type: new_set
+      enabled: true
+    -
+      id: m0b0y7zc
+      plan_name: 'PLATINUM PLAN'
+      currency: dollar
+      frequency: Monthly
+      price: '100'
+      features:
+        -
+          id: m0b0yf1y
+          feature: 'Facial Massage'
+        -
+          id: m0b0yfxd
+          feature: 'Facial Massage'
+        -
+          id: m0b0ygpe
+          feature: 'Facial Massage'
+        -
+          id: m0b0yhny
+          feature: 'Facial Massage'
+        -
+          id: m0b0yium
+          feature: 'Facial Massage'
+      button_title: 'Order Now'
+      button_link: /contact
+      type: new_set
+      enabled: true
+    -
+      id: m0b0ykh9
+      plan_name: 'FAMILY PLAN'
+      currency: dollar
+      frequency: Monthly
+      price: '100'
+      features:
+        -
+          id: m0b0yq65
+          feature: 'Facial Massage'
+        -
+          id: m0b0yr6q
+          feature: 'Facial Massage'
+        -
+          id: m0b0ys4i
+          feature: 'Facial Massage'
+        -
+          id: m0b0yu1b
+          feature: 'Facial Massage'
+        -
+          id: m0b0yux7
+          feature: 'Facial Massage'
+      button_title: 'Order Now'
+      button_link: /contact
+      type: new_set
+      enabled: true
