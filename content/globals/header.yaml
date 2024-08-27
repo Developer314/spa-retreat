@@ -107,21 +107,21 @@ data:
                         </button>
                         <div class="collapse navbar-collapse bg-light py-3" id="navbarCollapse">
                             <div class="navbar-nav mx-auto border-top">
-                                <a href="/" class="nav-item nav-link active">Home</a>
-                                <a href="/about-us" class="nav-item nav-link">About Us</a>
-                                <a href="/services" class="nav-item nav-link">Services</a>
-                                <a href="/pricing" class="nav-item nav-link">Pricing</a>
+                                <a href="/" class="nav-item nav-link {{if slug == "home"}} active {{/if}}">Home</a>
+                                <a href="/about-us" class="nav-item nav-link {{if slug == "about-us"}} active {{/if}}">About Us</a>
+                                <a href="/services" class="nav-item nav-link {{if slug == "services"}} active {{/if}}">Services</a>
+                                <a href="/pricing" class="nav-item nav-link {{if slug == "pricing"}} active {{/if}}">Pricing</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                        <a href="/team" class="dropdown-item">Team</a>
-                                        <a href="/testimonial" class="dropdown-item">Testimonial</a>
-                                        <a href="/gallery" class="dropdown-item">Gallery</a>
-                                        <a href="/appointment" class="dropdown-item">Appointment</a>
-                                        <a href="/404" class="dropdown-item">404 page</a>
+                                        <a href="/team" class="dropdown-item {{if slug == "team"}} active {{/if}}">Team</a>
+                                        <a href="/testimonial" class="dropdown-item {{if slug == "testimonial"}} active {{/if}}">Testimonial</a>
+                                        <a href="/gallery" class="dropdown-item {{if slug == "gallery"}} active {{/if}}">Gallery</a>
+                                        <a href="/appointment" class="dropdown-item {{if slug == "appointment"}} active {{/if}}">Appointment</a>
+                                        
                                     </div>
                                 </div>
-                                <a href="/contact-us" class="nav-item nav-link">Contact Us</a>
+                                <a href="/contact-us" class="nav-item nav-link {{if slug == "contact-us"}} active {{/if}}">Contact Us</a>
                             </div>
                             <div class="d-flex align-items-center flex-nowrap pt-xl-0">
                                 <button class="btn-search btn btn-primary btn-primary-outline-0 rounded-circle btn-lg-square" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
