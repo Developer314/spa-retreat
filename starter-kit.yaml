@@ -4,5 +4,8 @@ export_paths:
   - config/statamic/search.php
   - resources/blueprints
   - resources/views
+  - resources/fieldsets
+  - resources/forms
+  - resources/blueprints
   - public/build
   - public/assets
