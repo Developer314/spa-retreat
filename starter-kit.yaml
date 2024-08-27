@@ -1,0 +1,8 @@
+export_paths:
+  - content
+  - config/statamic/assets.php
+  - config/statamic/search.php
+  - resources/blueprints
+  - resources/views
+  - public/build
+  - public/assets
