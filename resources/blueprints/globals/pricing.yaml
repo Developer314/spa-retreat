@@ -1,0 +1,154 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: pricing
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: plan_name
+                          field:
+                            input_type: text
+                            default: 'GOLD PLAN'
+                            antlers: false
+                            type: text
+                            display: 'Plan Name'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: currency
+                          field:
+                            options:
+                              dollar: $
+                              pound: £
+                              euro: €
+                              franc: ₣
+                              rupee: ₹
+                              dinar: 'د. ك'
+                            taggable: false
+                            push_tags: false
+                            multiple: false
+                            clearable: false
+                            searchable: true
+                            cast_booleans: false
+                            default: dollar
+                            type: select
+                            display: Currency
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: frequency
+                          field:
+                            options:
+                              Monthly: Monthly
+                              Yearly: Yearly
+                              Weekly: Weekly
+                            taggable: false
+                            push_tags: false
+                            multiple: false
+                            clearable: false
+                            searchable: true
+                            cast_booleans: false
+                            default: Monthly
+                            type: select
+                            display: Frequency
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: price
+                          field:
+                            input_type: text
+                            default: '100'
+                            antlers: false
+                            type: text
+                            display: Price
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: features
+                          field:
+                            fields:
+                              -
+                                handle: feature
+                                field:
+                                  input_type: text
+                                  default: 'Facial Massage'
+                                  antlers: false
+                                  type: text
+                                  display: Feature
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                            mode: table
+                            reorderable: true
+                            fullscreen: true
+                            type: grid
+                            display: Features
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: button_title
+                          field:
+                            input_type: text
+                            default: 'Order Now'
+                            antlers: false
+                            type: text
+                            display: 'Button Title'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: button_link
+                          field:
+                            input_type: text
+                            default: /contact
+                            antlers: false
+                            type: text
+                            display: 'Button Link'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: Pricing
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

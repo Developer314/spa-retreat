@@ -1,0 +1,130 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: members
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: name
+                          field:
+                            input_type: text
+                            default: 'Emily Wilson'
+                            antlers: false
+                            type: text
+                            display: Name
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: speciality
+                          field:
+                            options:
+                              'Wellness Therapist': 'Wellness Therapist'
+                              'Spa Therapist': 'Spa Therapist'
+                              'Beauty Specialist': 'Beauty Specialist'
+                              'Skincare Expert': 'Skincare Expert'
+                            taggable: false
+                            push_tags: false
+                            multiple: false
+                            clearable: false
+                            searchable: true
+                            cast_booleans: false
+                            type: select
+                            display: Speciality
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Image
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: social_media
+                          field:
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  options:
+                                    twitter: Twitter
+                                    facebook-f: Facebook
+                                    linkedin-in: 'Linked In'
+                                    instagram: Instagram
+                                  taggable: false
+                                  push_tags: false
+                                  multiple: false
+                                  clearable: false
+                                  searchable: true
+                                  cast_booleans: false
+                                  default: twitter
+                                  type: select
+                                  display: iCon
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: link
+                                field:
+                                  input_type: text
+                                  default: 'https://www.linkedin.com/company/recolve-314-digital/'
+                                  antlers: false
+                                  type: text
+                                  display: Link
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                            mode: table
+                            reorderable: true
+                            fullscreen: true
+                            type: grid
+                            display: 'Social Media'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: Members
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

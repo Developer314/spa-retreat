@@ -1,0 +1,84 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: testimonials
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: name
+                          field:
+                            input_type: text
+                            antlers: false
+                            type: text
+                            display: Name
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: profession
+                          field:
+                            input_type: text
+                            default: 'Marketing Manager'
+                            antlers: false
+                            type: text
+                            display: Profession
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: Image
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: testimonial_data
+                          field:
+                            default: 'Exceptional experience at Spa Retreat! Skilled therapists, serene ambiance, and tailored treatments melted away stress and left me feeling refreshed, renewed, and rejuvenated. Highly recommended for ultimate relaxation!'
+                            antlers: false
+                            type: textarea
+                            display: 'Testimonial Data'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+              type: replicator
+              display: Testimonials
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

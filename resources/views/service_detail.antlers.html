@@ -1,0 +1,64 @@
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb py-5" style="background-image: url({{banner_image}});">
+    <div class="container text-center py-5">
+        <h3 class="text-white display-3 mb-4">{{banner_title}}</h1>
+        <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="/services">Services</a></li>
+            <li class="breadcrumb-item active text-white">{{title}}</li>
+        </ol>    
+    </div>
+</div>
+<!-- Header End -->
+
+  <!-- About Start -->
+  <div class="container-fluid about py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-baseline">
+            <div class="col-lg-5">
+                <div class="video">
+                    <img src="{{ glide:image_1 preset="service_image_1" }}" class="img-fluid rounded" alt="{{title}}">
+                    <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;;">
+                        <img src="{{ glide:image_2 preset="service_image_2" }}" class="img-fluid rounded" alt="{{title}}" style="width: 300px; height: 200px;">
+                    </div>
+                    <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="{{youtube_video_link}}" data-bs-target="#videoModal">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div>
+                    <p class="fs-4 text-uppercase text-primary">{{title}}</p>
+                    <h1 class="display-4 mb-4">{{heading}}</h1>
+                   {{long_description}}
+                   <a href="{{button_link}}" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" target="{{button_target}}">{{button_text}}</a>
+                </div>
+              
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- Modal Video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{heading}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- 16:9 aspect ratio -->
+                <div class="ratio ratio-16x9">
+                    <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                        allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+{{content}}
+{{custom_template}}
+{{/content}}

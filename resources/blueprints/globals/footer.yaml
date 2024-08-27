@@ -1,0 +1,284 @@
+tabs:
+  Footer:
+    display: Footer
+    sections:
+      -
+        fields:
+          -
+            handle: scripts
+            field:
+              default: |-
+                {{footer:footer_template}}
+                <!-- Back to Top -->
+                 <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+                        
+                 <!-- JavaScript Libraries -->
+                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+                 <script src="/assets/lib/wow/wow.min.js"></script>
+                 <script src="/assets/lib/easing/easing.min.js"></script>
+                 <script src="/assets/lib/waypoints/waypoints.min.js"></script>
+                 <script src="/assets/lib/counterup/counterup.min.js"></script>
+                 <script src="/assets/lib/lightbox/js/lightbox.min.js"></script>
+                 <script src="/assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+                 <!-- Template Javascript -->
+                 <script src="/assets/js/main.js"></script>
+                 </body>
+
+                </html>
+              antlers: true
+              type: textarea
+              display: Scripts
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  extra_scripts:
+    display: 'Extra Scripts'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: extra_scripts
+            field:
+              default: '<!-- Extra Scripts -->'
+              antlers: true
+              type: textarea
+              display: 'Extra Scripts'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  news_letter:
+    display: 'News Letter'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: section_title
+            field:
+              input_type: text
+              default: 'News Letter'
+              antlers: false
+              type: text
+              display: 'Section Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: description
+            field:
+              default: 'Join our newsletter for exclusive updates, tips, and offers from Spa Retreat! Get: - Early access to new services and packages - Expert advice on wellness and self-care - Special promotions and discounts - News and events from our spa community'
+              antlers: false
+              type: textarea
+              display: Description
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  links:
+    display: Links
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: link_title
+            field:
+              input_type: text
+              default: 'Our Services'
+              antlers: false
+              type: text
+              display: 'Link Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: links
+            field:
+              default: |-
+                <a href=""><i class="fas fa-angle-right me-2"></i> Facials</a>
+                                            <a href=""><i class="fas fa-angle-right me-2"></i> Waxing</a>
+                                            <a href=""><i class="fas fa-angle-right me-2"></i> Message</a>
+                                            <a href=""><i class="fas fa-angle-right me-2"></i> Minarel baths</a>
+                                            <a href=""><i class="fas fa-angle-right me-2"></i> Body treatments</a>
+                                            <a href=""><i class="fas fa-angle-right me-2"></i> Aroma Therapy</a>
+                                            <a href=""><i class="fas fa-angle-right me-2"></i> Stone Spa</a>
+              antlers: false
+              type: textarea
+              display: Links
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  schedule:
+    display: Schedule
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: heading
+            field:
+              input_type: text
+              default: Schedule
+              antlers: false
+              type: text
+              display: Heading
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: schedule_data
+            field:
+              default: |-
+                <p class="text-muted mb-0">Monday: <span class="text-white"> 09:00 am – 10:00 pm</span></p>
+                                            <p class="text-muted mb-0">Saturday: <span class="text-white"> 09:00 am – 08:00 pm</span></p>
+                                            <p class="text-muted mb-0">Sunday: <span class="text-white"> 09:00 am – 05:00 pm</span></p>
+                                            <h4 class="my-4 text-white">Address</h4>
+                                            <p class="mb-0"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Trivandrum, Kerala, India</p>
+              antlers: false
+              type: textarea
+              display: Data
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  follow_us:
+    display: 'Follow Us'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: details
+            field:
+              default: |-
+                <h4 class="mb-4 text-white">Follow Us</h4>
+                                            <a href=""><i class="fas fa-angle-right me-2"></i> Faceboock</a>
+                                            <a href=""><i class="fas fa-angle-right me-2"></i> Instagram</a>
+                                            <a href=""><i class="fas fa-angle-right me-2"></i> Twitter</a>
+                                            <h4 class="my-4 text-white">Contact Us</h4>
+                                            <p class="mb-0"><i class="fas fa-envelope text-secondary me-2"></i> manup.rav@gmail.com</p>
+                                            <p class="mb-0"><i class="fas fa-phone text-secondary me-2"></i> +918907289865</p>
+              antlers: false
+              type: textarea
+              display: Details
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  copyright:
+    display: Copyright
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: copyright
+            field:
+              default: |-
+                <!-- Copyright Start -->
+                        <div class="container-fluid copyright py-4">
+                            <div class="container">
+                                <div class="row g-4 align-items-center">
+                                    <div class="col-md-4 text-center text-md-start mb-md-0">
+                                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Spa Retreat</a>, All right reserved.</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="d-flex justify-content-center">
+                                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                                            <a href="" class="btn btn-light btn-light-outline-0 btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 text-center text-md-end text-white">
+                                        
+                                        Developed By <a class="border-bottom" href="https://www.revolve314.com">Revolve 314 Digital </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Copyright End -->
+              antlers: false
+              type: textarea
+              display: Copyright
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  footer_template:
+    display: 'Footer Template'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: footer_template
+            field:
+              default: |-
+                <!-- Footer Start -->
+                        <div class="container-fluid footer py-5">
+                            <div class="container py-5">
+                                <div class="row g-5">
+                                    <div class="col-md-6 col-lg-6 col-xl-3">
+                                        <div class="footer-item">
+                                            <h4 class="mb-4 text-white">{{footer:section_title}}</h4>
+                                            <p class="text-white">{{footer:description}}</p>
+                                            <div class="position-relative mx-auto rounded-pill">
+                                                <input class="form-control rounded-pill border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                                <button type="button" class="btn btn-primary btn-primary-outline-0 rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-3">
+                                        <div class="footer-item d-flex flex-column">
+                                            <h4 class="mb-4 text-white">{{footer:link_title}}</h4>
+                                            {{footer:links}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-3">
+                                        <div class="footer-item d-flex flex-column">
+                                            <h4 class="mb-4 text-white">{{footer:heading}}</h4>
+                                            {{footer:data}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 col-xl-3">
+                                        <div class="footer-item d-flex flex-column">
+                                            {{footer:details}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer End -->
+
+
+
+                       {{footer:copyright}}
+              antlers: true
+              type: textarea
+              display: 'Footer Template'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

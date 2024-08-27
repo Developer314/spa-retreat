@@ -1,0 +1,84 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: first_name
+            field:
+              input_type: text
+              placeholder: 'First Name'
+              antlers: false
+              type: text
+              display: 'First Name'
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              input_type: text
+              placeholder: Email
+              antlers: false
+              type: text
+              display: Email
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+                - email
+          -
+            handle: service
+            field:
+              options:
+                'Swedish Massage': 'Swedish Massage'
+                'Deep Tissue Massage': 'Deep Tissue Massage'
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: 'Swedish Massage'
+              type: select
+              display: Service
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: date_of_appointment
+            field:
+              input_type: text
+              placeholder: 'Date of Appointment'
+              antlers: false
+              type: text
+              display: 'Date Of Appointment'
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: your_comments
+            field:
+              placeholder: 'Your Comments'
+              antlers: false
+              type: textarea
+              display: 'Your Comments'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

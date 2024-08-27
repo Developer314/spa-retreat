@@ -1,0 +1,22 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: email
+            field:
+              input_type: text
+              placeholder: 'Your Email'
+              antlers: false
+              type: text
+              display: Email
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+                - email

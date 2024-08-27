@@ -1,0 +1,77 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: first_name
+            field:
+              input_type: text
+              placeholder: 'Your Name'
+              antlers: false
+              type: text
+              display: 'First Name'
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              input_type: text
+              placeholder: 'Your Email'
+              antlers: false
+              type: text
+              display: Email
+              listable: true
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+                - email
+          -
+            handle: phone
+            field:
+              input_type: text
+              placeholder: 'Your Phone'
+              antlers: false
+              type: text
+              display: Phone
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: subject
+            field:
+              input_type: text
+              placeholder: Subject
+              antlers: false
+              type: text
+              display: Subject
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: message
+            field:
+              placeholder: 'Your Message'
+              antlers: false
+              type: textarea
+              display: Message
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false

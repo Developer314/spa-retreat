@@ -1,0 +1,2164 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field: block_types.content
+            config:
+              sets:
+                home_gallery:
+                  display: 'Home Gallery'
+                  instructions: null
+                  icon: null
+                  sets:
+                    home_gallery:
+                      display: 'Home Gallery'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: home_gallery
+                          field:
+                            collapse: false
+                            previews: true
+                            fullscreen: true
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                instructions: null
+                                icon: null
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    instructions: null
+                                    icon: null
+                                    fields:
+                                      -
+                                        handle: background_image
+                                        field:
+                                          max_files: 1
+                                          mode: list
+                                          container: assets
+                                          restrict: false
+                                          allow_uploads: true
+                                          show_filename: true
+                                          show_set_alt: true
+                                          type: assets
+                                          display: 'Background Image'
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: title_1
+                                        field:
+                                          input_type: text
+                                          default: 'Relax, Rejuvenate, Renew'
+                                          antlers: false
+                                          type: text
+                                          display: 'Title 1'
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: title_2
+                                        field:
+                                          input_type: text
+                                          default: 'Anti-Aging Facial'
+                                          antlers: false
+                                          type: text
+                                          display: 'Title 2'
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: description
+                                        field:
+                                          default: 'The Anti-Aging Facial rejuvenates skin, reducing fine lines and wrinkles. Customized masks and expert techniques stimulate collagen, revealing a brighter, smoother, and youthful complexion.'
+                                          antlers: false
+                                          type: textarea
+                                          display: Description
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: button_one_text
+                                        field:
+                                          input_type: text
+                                          default: 'Get Start'
+                                          antlers: false
+                                          type: text
+                                          display: 'Button One Text'
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: button_one_link
+                                        field:
+                                          input_type: text
+                                          default: /
+                                          antlers: false
+                                          type: text
+                                          display: 'Button one Link'
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: button_one_target
+                                        field:
+                                          options:
+                                            _self: Self
+                                            _blank: New
+                                          taggable: false
+                                          push_tags: false
+                                          multiple: false
+                                          clearable: false
+                                          searchable: true
+                                          cast_booleans: false
+                                          default: _self
+                                          type: select
+                                          display: 'Button One target'
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: button_two_text
+                                        field:
+                                          input_type: text
+                                          default: 'Order Now'
+                                          antlers: false
+                                          type: text
+                                          display: 'Button two Text'
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: button_two_link
+                                        field:
+                                          input_type: text
+                                          default: /
+                                          antlers: false
+                                          type: text
+                                          display: 'Button Two Link'
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                                      -
+                                        handle: button_two_target
+                                        field:
+                                          options:
+                                            _self: Self
+                                            _blank: Blank
+                                          taggable: false
+                                          push_tags: false
+                                          multiple: false
+                                          clearable: false
+                                          searchable: true
+                                          cast_booleans: false
+                                          default: _self
+                                          type: select
+                                          display: 'Button two Target'
+                                          listable: hidden
+                                          instructions_position: above
+                                          visibility: visible
+                                          replicator_preview: true
+                                          hide_display: false
+                            type: replicator
+                            display: 'Home Gallery'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- Carousel Start -->
+                                  <div class="container-fluid carousel-header px-0">
+                                      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                                          <ol class="carousel-indicators">
+                                              {{home_gallery}}
+                                              <li data-bs-target="#carouselId" data-bs-slide-to="{{increment}}" class="{{if first}} active {{/if}}"></li>
+                                              {{/home_gallery}}
+                                          </ol>
+                                          <div class="carousel-inner" role="listbox">
+
+                                              {{home_gallery}}
+                                              <div class="carousel-item {{if first}} active {{/if}}">
+                                                  <img src="{{background_image}}" class="img-fluid" alt="{{title_2}}">
+                                                  <div class="carousel-caption">
+                                                      <div class="p-3" style="max-width: 900px;">
+                                                          <h4 class="text-primary text-uppercase mb-3">{{title_1}}</h4>
+                                                          <h1 class="display-1 text-capitalize text-dark mb-3">{{title_2}}</h1>
+                                                          <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">{{description}}</p>
+                                                          <div class="d-flex align-items-center justify-content-center">
+                                                              <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" target="{{button_one_target}}" href="{{button_one_link}}">{{button_one_text}}</a>
+                                                              <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" target="{{button_two_target}}" href="{{button_two_link}}">{{button_two_text}}</a>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              {{/home_gallery}}
+                                             
+                                          </div>
+                                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Previous</span>
+                                          </button>
+                                          <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Next</span>
+                                          </button>
+                                      </div>
+                                  </div>
+                                  <!-- Carousel End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            if:
+                              edit_template: 'equals true'
+                            always_save: true
+                    services:
+                      display: Services
+                      instructions: null
+                      icon: hierarchy-vertical-nav-flow
+                      fields:
+                        -
+                          handle: title_one
+                          field:
+                            input_type: text
+                            placeholder: 'Our Services'
+                            antlers: false
+                            type: text
+                            display: 'Title One'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: title_two
+                          field:
+                            input_type: text
+                            default: 'Transform and renew with our comprehensive spa and beauty offerings.'
+                            antlers: false
+                            type: text
+                            display: 'Title two'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: button_text
+                          field:
+                            input_type: text
+                            default: 'More Services'
+                            antlers: false
+                            type: text
+                            display: 'Button Text'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: button_link
+                          field:
+                            input_type: text
+                            default: /services
+                            antlers: false
+                            type: text
+                            display: 'Button Link'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- Services Start -->
+                                  <div class="container-fluid services py-5">. 
+                                      <div class="container py-5">
+                                          <div class="mx-auto text-center mb-5" style="max-width: 800px;">
+                                              <p class="fs-4 text-uppercase text-center text-primary">{{title_one}}</p>
+                                              <h1 class="display-3">{{titile_two}}</h1>
+                                          </div>
+                                          <div class="row g-4">
+                                              {{collection:services limit="8" as="posts"}}
+                              {{posts}}
+                                                  <div class="col-lg-6">
+                                                      <div class="services-item bg-light border-4 border-end border-primary rounded p-4">
+                                                          <div class="row align-items-center">
+                                                              <div class="col-8">
+                                                                  <div class="services-content text-end">
+                                                                      <h3>{{title}}</h3>
+                                                                      <p>{{short_description}}</p>
+                                                                      <a href="{{url}}" class="btn btn-primary btn-primary-outline-0 rounded-pill py-2 px-4">{{button_text}}</a>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="col-4">
+                                                                  <div class="services-img d-flex align-items-center justify-content-center rounded">
+                                                                      <img src="{{ glide:image_1 preset="service_thumb" }}" class="img-fluid rounded" alt="{{title}}">
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                              {{/posts}}
+                                                  {{/collection:services}}
+                                              <div class="col-12">
+                                                  <div class="services-btn text-center">
+                                                      <a href="{{button_link}}" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">{{button_text}}</a>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Services End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            if:
+                              edit_template: 'equals true'
+                    inside_page_banner:
+                      display: 'Inside Page Banner'
+                      instructions: null
+                      icon: align-object-top
+                      fields:
+                        -
+                          handle: banner_image
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: 'Banner Image'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: banner_text
+                          field:
+                            input_type: text
+                            default: 'Banner Text'
+                            antlers: false
+                            type: text
+                            display: 'Banner Text'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- Header Start -->
+                              <div class="container-fluid bg-breadcrumb py-5" style="background-image: url({{banner_image}});">
+                                  <div class="container text-center py-5">
+                                      <h3 class="text-white display-3 mb-4">{{banner_text}}</h1>
+                                      <ol class="breadcrumb justify-content-center mb-0">
+                                         
+                                          {{ nav:breadcrumbs }}
+                                          <li class="breadcrumb-item {{ if is_current }} active {{ /if }} text-white">
+                                              <a href="{{ url }}">{{ title }}</a>
+                                          </li>
+                                          {{ /nav:breadcrumbs }}
+
+
+                                      </ol>    
+                                  </div>
+                              </div>
+                              <!-- Header End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            always_save: true
+                            if:
+                              edit_template: 'equals true'
+                    about_us:
+                      display: 'About Us'
+                      instructions: null
+                      icon: computer-voice-mail-microphone
+                      fields:
+                        -
+                          handle: image_1
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: 'Image 1'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: image_2
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: 'Image 2'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: youtube_video_link
+                          field:
+                            input_type: text
+                            default: 'https://www.youtube.com/embed/82eLC8SzEvE?si=8mK_evhU0s9l4i_l'
+                            antlers: false
+                            type: text
+                            display: 'Youtube Video Link'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: title_1
+                          field:
+                            input_type: text
+                            default: 'Contact Us'
+                            antlers: false
+                            type: text
+                            display: 'Title 1'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: title_2
+                          field:
+                            input_type: text
+                            default: 'Relax, rejuvenate, and refresh with our luxurious spa and beauty treatments.'
+                            antlers: false
+                            type: text
+                            display: 'Title 2'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: description_1
+                          field:
+                            buttons:
+                              - h2
+                              - h3
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - removeformat
+                              - quote
+                              - anchor
+                              - image
+                              - table
+                              - h1
+                              - h4
+                              - h5
+                              - h6
+                              - underline
+                              - strikethrough
+                              - small
+                              - superscript
+                              - subscript
+                              - code
+                              - codeblock
+                              - horizontalrule
+                              - alignleft
+                              - aligncenter
+                              - alignright
+                              - alignjustify
+                            smart_typography: false
+                            save_html: false
+                            inline: false
+                            toolbar_mode: fixed
+                            reading_time: false
+                            word_count: false
+                            fullscreen: true
+                            allow_source: true
+                            enable_input_rules: true
+                            enable_paste_rules: true
+                            remove_empty_nodes: false
+                            antlers: false
+                            link_noopener: false
+                            link_noreferrer: false
+                            target_blank: false
+                            always_show_set_button: false
+                            collapse: false
+                            previews: true
+                            type: bard
+                            display: 'Description 1'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: offers
+                          field:
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  input_type: text
+                                  default: '<i class="fab fa-gitkraken fa-3x text-primary"></i>'
+                                  antlers: false
+                                  type: text
+                                  display: iCon
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: title
+                                field:
+                                  input_type: text
+                                  default: 'Refer a friend and receive 20% off your next service.'
+                                  antlers: false
+                                  type: text
+                                  display: Title
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: description
+                                field:
+                                  default: 'Share the bliss, refer a friend and enjoy 20% off your next!'
+                                  antlers: false
+                                  type: textarea
+                                  display: Description
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                            mode: table
+                            reorderable: true
+                            fullscreen: true
+                            type: grid
+                            display: Offers
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: description_2
+                          field:
+                            buttons:
+                              - h2
+                              - h3
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - removeformat
+                              - quote
+                              - anchor
+                              - image
+                              - table
+                              - h1
+                              - h4
+                              - h5
+                              - h6
+                              - underline
+                              - strikethrough
+                              - small
+                              - superscript
+                              - subscript
+                              - code
+                              - codeblock
+                              - horizontalrule
+                              - alignleft
+                              - aligncenter
+                              - alignright
+                              - alignjustify
+                            smart_typography: false
+                            save_html: false
+                            inline: false
+                            toolbar_mode: fixed
+                            reading_time: false
+                            word_count: false
+                            fullscreen: true
+                            allow_source: true
+                            enable_input_rules: true
+                            enable_paste_rules: true
+                            remove_empty_nodes: false
+                            antlers: false
+                            link_noopener: false
+                            link_noreferrer: false
+                            target_blank: false
+                            always_show_set_button: false
+                            collapse: false
+                            previews: true
+                            type: bard
+                            display: 'Description 2'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: button_text
+                          field:
+                            input_type: text
+                            default: Explore
+                            antlers: false
+                            type: text
+                            display: 'Button Text'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: button_link
+                          field:
+                            input_type: text
+                            default: /services
+                            antlers: false
+                            type: text
+                            display: 'Button Link'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: button_target
+                          field:
+                            options:
+                              _self: Self
+                              _blank: Blank
+                            taggable: false
+                            push_tags: false
+                            multiple: false
+                            clearable: false
+                            searchable: true
+                            cast_booleans: false
+                            type: select
+                            display: 'Button Target'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- About Start -->
+                                <div class="container-fluid about py-5">
+                                  <div class="container py-5">
+                                      <div class="row g-5 align-baseline">
+                                          <div class="col-lg-5">
+                                              <div class="video">
+                                                  <img src="{{ glide:image_1 preset="service_image_1" }}" class="img-fluid rounded" alt="{{title}}">
+                                                  <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;;">
+                                                      <img src="{{ glide:image_2 preset="service_image_2" }}" class="img-fluid rounded" alt="{{title}}" style="width: 300px; height: 200px;">
+                                                  </div>
+                                                  <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="{{youtube_video_link}}" data-bs-target="#videoModal">
+                                                      <span></span>
+                                                  </button>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-7">
+                                              <div>
+                                                  <p class="fs-4 text-uppercase text-primary">{{title_1}}</p>
+                                                  <h1 class="display-4 mb-4">{{title_2}}</h1>
+                                                 {{description_1}}
+                                                 <div class="row g-4">
+                                                  {{offers}}
+
+                                                  <div class="col-md-6">
+                                                      <div class="d-flex align-items-center">
+                                                          {{icon}}
+                                                          <div class="ms-4">
+                                                              <h5 class="mb-2">{{title}}</h5>
+                                                              <p class="mb-0">{{description}}</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  {{/offers}}
+
+                                              </div>
+                                            
+                                              {{description_2}}
+                                                 <a href="{{button_link}}" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" target="{{button_target}}">{{button_text}}</a>
+                                              </div>
+                                            
+                                          </div> 
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- Modal Video -->
+                               
+                              <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                      <div class="modal-content rounded-0">
+                                          <div class="modal-header">
+                                              <h5 class="modal-title" id="exampleModalLabel">{{title_2}}</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                              <!-- 16:9 aspect ratio -->
+                                              <div class="ratio ratio-16x9">
+                                                  <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                                      allow="autoplay"></iframe>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- About End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            always_save: true
+                            if:
+                              edit_template: 'equals true'
+                    get_appointment:
+                      display: 'Get Appointment'
+                      instructions: null
+                      icon: form-drop-down-menu
+                      fields:
+                        -
+                          handle: title_1
+                          field:
+                            input_type: text
+                            placeholder: 'Get In Touch'
+                            antlers: false
+                            type: text
+                            display: 'Title 1'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: title_2
+                          field:
+                            input_type: text
+                            default: 'Get Appointment'
+                            antlers: false
+                            type: text
+                            display: 'Title 2'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: form_success_message
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: 'Form Success Message'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            default: 'Thanks for your time, Form Submitted Successfully !'
+                        -
+                          handle: submit_buttion_text
+                          field:
+                            input_type: text
+                            default: Submit
+                            antlers: false
+                            type: text
+                            display: 'Submit Buttion Text'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: opening_hours_text
+                          field:
+                            input_type: text
+                            default: 'Opening Hours'
+                            antlers: false
+                            type: text
+                            display: 'Opening Hours Text'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: opening_hours
+                          field:
+                            fields:
+                              -
+                                handle: day
+                                field:
+                                  input_type: text
+                                  default: Saturday
+                                  antlers: false
+                                  type: text
+                                  display: Day
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: time
+                                field:
+                                  input_type: text
+                                  default: '09:00 am – 10:00 pm'
+                                  antlers: false
+                                  type: text
+                                  display: Time
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                            mode: table
+                            reorderable: true
+                            fullscreen: true
+                            type: grid
+                            display: 'Opening Hours'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: additional_info
+                          field:
+                            default: "Don't miss out: seasonal discounts available for a limited time!"
+                            antlers: false
+                            type: textarea
+                            display: 'Additional Info'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: statistics
+                          field:
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  input_type: text
+                                  default: '<i class="fas fa-globe fa-5x text-primary mb-3"></i>'
+                                  antlers: false
+                                  type: text
+                                  display: iCon
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: title
+                                field:
+                                  input_type: text
+                                  default: Clients
+                                  antlers: false
+                                  type: text
+                                  display: Title
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: number
+                                field:
+                                  input_type: text
+                                  default: '100'
+                                  antlers: false
+                                  type: text
+                                  display: Number
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                            mode: table
+                            reorderable: true
+                            fullscreen: true
+                            type: grid
+                            display: Statistics
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- Appointment Start -->
+                                  <div class="container-fluid appointment py-5">
+                                      <div class="container py-5">
+                                          <div class="row g-5 align-items-center">
+                                              <div class="col-lg-6">
+                                                  <div class="appointment-form p-5">
+                                                      <p class="fs-4 text-uppercase text-primary">{{title_1}}</p>
+                                                      <h1 class="display-4 mb-4 text-white">{{title_2}}</h1>
+                                                      
+                                                      {{ form:get_appointment }}
+                               
+                                  {{ if success }}
+                                      <div class="text-success">
+                                          {{ form_success_message }}
+                                      </div>
+                                  {{ else }}
+                                     {{ if errors }}
+                                          <div class="text-danger mb-3">
+                                              {{ errors }}
+                                                  {{ value }}<br>
+                                              {{ /errors }}
+                                          </div>
+                                      {{ /if }}
+                                      <div class="row gy-3 gx-4">
+                                      {{ fields }}
+                                          
+                                              
+                                              {{if input_type == "text"}}
+                                              <div class="col-lg-6">
+                                                  <input type="{{input_type}}" name="{{handle}}"  class="form-control py-3 border-white bg-transparent text-white" placeholder="{{placeholder}}">
+                                              </div>
+                                              {{elseif type=="textarea"}}
+                                              <div class="col-lg-12">
+                                                  <textarea class="form-control border-white bg-transparent text-white" name="{{handle}}" cols="30" rows="5" placeholder="{{placeholder}}"></textarea>
+                                              </div>
+
+                                              {{elseif type=="select"}}
+                                              
+                                                  <div class="col-lg-6">
+                                                      <select class="form-select py-3 border-white bg-transparent" aria-label="{{display}}">
+                                                          <option selected="">{{display}}</option>
+                                                          {{ foreach:options }}
+
+                                                          <option selected="{{key}}">{{value}}</option>
+                                                          {{ /foreach:options }}
+                                                      </select>
+                                                  </div>
+                                             
+
+                                              
+
+                                              {{else}}
+
+                                              <div class="col-lg-6">
+                                                  <input type="{{input_type}}" name="{{handle}}"  class="form-control py-3 border-white bg-transparent text-white" placeholder="{{placeholder}}">
+                                              </div>
+                                              
+                                              {{/if}}
+
+
+
+
+
+
+                                      {{ /fields }}
+                               </div>
+                                     
+                                      <input type="hidden" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+                               
+                                    
+                                      <div class="col-lg-12 mt-3">
+                                          <button type="submit" class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5">{{submit_buttion_text}}</button>
+                                      </div>    
+                                      
+                                      {{ /if }}
+                               
+                              {{ /form:get_appointment }}
+                                                  </div>
+                                              </div>
+                                              <div class="col-lg-6">
+                                                  <div class="appointment-time p-5">
+                                                      <h1 class="display-5 mb-4">{{opening_hours_text}}</h1>
+                                                      {{opening_hours}}
+                                                      <div class="d-flex justify-content-between fs-5 text-white">
+                                                          <p>{{day}}:</p>
+                                                          <p>{{time}}</p>
+                                                      </div>
+                                                      {{/opening_hours}}
+                                                      <p class="text-dark">{{additional_info}}</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Counter Start -->
+                                      <div class="container-fluid counter-section">
+                                          <div class="container py-5">
+                                              <div class="row g-5 justify-content-center">
+                                                  {{statistics}}
+                                                  <div class="col-md-6 col-lg-4 col-xl-4">
+                                                      <div class="counter-item p-5">
+                                                          <div class="counter-content bg-white p-4">
+                                                              {{icon}}
+                                                              <h5 class="text-primary">{{title}}</h5>
+                                                              <div class="svg-img">
+                                                                  <svg width="100" height="50">
+                                                                      <polygon points="55, 10 85, 55 25, 55 25," style="fill: #DCCAF2;"/>
+                                                                  </svg>
+                                                              </div>
+                                                          </div>
+                                                          <div class="counter-quantity">
+                                                              <span class="text-white fs-2 fw-bold" data-toggle="counter-up">{{number}}</span>
+                                                              <span class="h1 fw-bold text-white">+</span>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                 {{/statistics}}
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Counter End -->
+                                  </div>
+                                  <!-- Appointment End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            always_save: true
+                            if:
+                              edit_template: 'equals true'
+                    our_gallery:
+                      display: 'Our Gallery'
+                      instructions: null
+                      icon: layout-grid-dots
+                      fields:
+                        -
+                          handle: title_1
+                          field:
+                            input_type: text
+                            default: 'Experience Our Excellence'
+                            antlers: false
+                            type: text
+                            display: 'Title 1'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: title_2
+                          field:
+                            input_type: text
+                            default: 'See Our Exceptional Services in Action Right Here'
+                            antlers: false
+                            type: text
+                            display: 'Title 2'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: number_of_items_per_category
+                          field:
+                            default: '4'
+                            type: integer
+                            display: 'Number of items Per category'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: button_text
+                          field:
+                            input_type: text
+                            default: 'Full Gallery'
+                            antlers: false
+                            type: text
+                            display: 'Button Text'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: button_link
+                          field:
+                            input_type: text
+                            default: /gallery
+                            antlers: false
+                            type: text
+                            display: 'Button link'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- Gallery Start -->
+                                  <div class="container-fluid gallery py-5">
+                                      <div class="container py-5">
+                                          <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                                              <p class="fs-4 text-uppercase text-primary">{{title_1}}</p>
+                                              <h1 class="display-4 mb-4">{{title_2}}</h1>
+                                          </div>
+                                          <div class="tab-class text-center">
+                                              <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                                                  <li class="nav-item">
+                                                      <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                                          <span class="text-dark" style="width: 150px;">All Gallery</span>
+                                                      </a>
+                                                  </li>
+                                                  {{gallery:gallery}}
+                                                  <li class="nav-item">
+                                                      <a class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#{{category}}">
+                                                          <span class="text-dark mx-2" style="width: 150px;">{{category:label}}</span>
+                                                      </a>
+                                                  </li>
+                                                  {{/gallery:gallery}}
+                                                 
+                                              </ul>
+                                              <div class="tab-content">
+                                                  <div id="tab-1" class="tab-pane fade show p-0 active">
+                                                      <div class="row g-4">
+                                                          <div class="col-lg-12">
+                                                              <div class="row g-4">
+                                                                  {{gallery:gallery}}
+                                                                  {{images limit="2"}}
+                                                                  <div class="col-lg-3">
+                                                                      <div class="gallery-img">
+                                                                          <img class="img-fluid rounded w-100" src="{{url}}" alt="{{category}}">
+                                                                          <div class="gallery-overlay p-4">
+                                                                              <h4 class="text-secondary">{{category}}</h4>
+                                                                          </div>
+                                                                          <div class="search-icon">
+                                                                              <a href="{{url}}" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                 {{/images}}
+                                                                  {{/gallery:gallery}}
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  {{gallery:gallery}}
+                                                  <div id="{{category}}" class="tab-pane fade show p-0">
+                                                      <div class="row g-4">
+                                                          <div class="col-lg-12">
+                                                              <div class="row g-4">
+                                                                 
+                                                                 {{images limit="{{number_of_items_per_category}}"}}
+                                                                  <div class="col-lg-3">
+                                                                      <div class="gallery-img">
+                                                                          <img class="img-fluid rounded w-100" src="{{url}}" alt="{{category}}">
+                                                                          <div class="gallery-overlay p-4">
+                                                                              <h4 class="text-secondary">{{category}}</h4>
+                                                                          </div>
+                                                                          <div class="search-icon">
+                                                                              <a href="{{url}}" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                                 {{/images}}
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  {{/gallery:gallery}}
+                                                 
+                                              </div>
+                                          </div>
+                              <div class="col-12 py-5">
+                                                      <div class="services-btn text-center">
+                                                          <a href="{{button_link}}" class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5">{{button_text}}</a>
+                                                      </div>
+                                                  </div>
+                                      </div>
+                                  </div>
+                                  <!-- gallery End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            always_save: true
+                            if:
+                              edit_template: 'equals true'
+                    pricing:
+                      display: Pricing
+                      instructions: null
+                      icon: money-cashier-price-tag
+                      fields:
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- Pricing Start -->
+                                  <div class="container-fluid pricing py-5">
+                                      <div class="container py-5">
+                                          <div class="owl-carousel pricing-carousel">
+                                              {{pricing:pricing}}
+                                              <div class="pricing-item">
+                                                  <div class="rounded pricing-content">
+                                                      <div class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary p-4">
+                                                          <h1 class="display-4 mb-0">
+                                                              <small class="align-top text-muted" style="font-size: 22px; line-height: 45px;">{{currency:label}}</small>{{price}}<small class="text-muted" style="font-size: 16px; line-height: 40px;">/{{frequency:label}}</small> 
+                                                          </h1>
+                                                          <h5 class="text-primary text-uppercase m-0">{{plan_name}}</h5>
+                                                      </div>
+                                                      <div class="p-4">
+                                                          {{features}}
+                                                          <p><i class="fa fa-check text-primary me-2"></i>{{feature}}</p>
+                                                          {{/features}}
+                                                          <a href="{{button_link}}" class="btn btn-primary btn-primary-outline-0 rounded-pill my-2 px-4">{{button_title}}</a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                            {{/pricing:pricing}}
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Pricing End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            always_save: true
+                            if:
+                              edit_template: 'equals true'
+                    team:
+                      display: Team
+                      instructions: null
+                      icon: id-face-scan
+                      fields:
+                        -
+                          handle: title_1
+                          field:
+                            input_type: text
+                            default: 'Spa Therapist'
+                            antlers: false
+                            type: text
+                            display: 'Title 1'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: title_2
+                          field:
+                            input_type: text
+                            default: 'Expert in Relaxation and Beauty Enhancement Therapies and Treatments'
+                            antlers: false
+                            type: text
+                            display: 'Title 2'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- Team Start -->
+                                  <div class="container-fluid team py-5"> 
+                                      <div class="container py-5">
+                                          <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                                              <p class="fs-4 text-uppercase text-primary">{{title_1}}</p>
+                                              <h1 class="display-8 mb-4">{{title_2}}</h1>
+                                          </div>
+                                          <div class="row g-4">
+                                              
+                                              {{members:members}}
+                                              
+                                              <div class="col-md-6 col-lg-6 col-xl-3">
+                                                  <div class="team-item">
+                                                      <div class="team-img rounded-top">
+
+                                                          <img src="{{ glide:image preset="team_member" }}"  class="img-fluid w-100 rounded-top bg-light" alt="">
+                                                      </div>
+                                                      <div class="team-text rounded-bottom text-center p-4">
+                                                          <h3 class="text-white">{{name}}</h3>
+                                                          <p class="mb-0 text-white">{{speciality:label}}</p>
+                                                      </div>
+                                                      <div class="team-social">
+                                                          {{social_media}}
+                                                          <a class="btn btn-light btn-light-outline-0 btn-square rounded-circle mb-2" target="_blank" href="{{link}}"><i class="fab fa-{{icon}}"></i></a>
+                                                         {{/social_media}}
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              
+                                              {{/members:members}}
+
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Team End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            always_save: true
+                            if:
+                              edit_template: 'equals true'
+                    testimonials:
+                      display: Testimonials
+                      instructions: null
+                      icon: content-book-open
+                      fields:
+                        -
+                          handle: title_1
+                          field:
+                            input_type: text
+                            default: Testimonials
+                            antlers: false
+                            type: text
+                            display: 'Title 1'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: title_2
+                          field:
+                            input_type: text
+                            default: 'See What our Clients Say!'
+                            antlers: false
+                            type: text
+                            display: 'Title 2'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- Testimonial Start --> 
+                                  <div class="container-fluid testimonial py-5">
+                                      <div class="container py-5">
+                                          <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                                              <p class="fs-4 text-uppercase text-primary">{{title_1}}</p>
+                                              <h1 class="display-4 mb-4 text-white">{{title_2}}</h1>
+                                          </div>
+                                          <div class="owl-carousel testimonial-carousel">
+
+                                              {{testimonials:testimonials}}
+
+
+                                              <div class="testimonial-item rounded p-4">
+                                                  <div class="row">
+                                                      <div class="col-4">
+                                                          <div class="d-flex flex-column mx-auto">
+                                                              <div class="rounded-circle mb-4" style="border: dashed; border-color: var(--bs-white);">
+                                                                  <img src="{{ glide:image preset="client_image" }}" class="img-fluid rounded-circle" alt="{{name}}">
+                                                              </div>
+                                                              <div class="text-center">
+                                                                  <h4 class="mb-2 text-primary">{{name}}</h4>
+                                                                  <p class="m-0 text-white">{{profession}}</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-8">
+                                                          <div class="position-absolute" style="top: 20px; right: 25px;">
+                                                              <i class="fa fa-quote-right fa-2x text-secondary"></i>
+                                                          </div>
+                                                          <div class="testimonial-content">
+                                                              <div class="d-flex mb-4">
+                                                                  
+                                                                  
+                                                                 
+                                                              </div>
+                                                              <p class="fs-5 mb-0 text-white">{{testimonial_data}}</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              {{/testimonials:testimonials}}
+
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- Testimonial End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            always_save: true
+                            if:
+                              edit_template: 'equals true'
+                    contact_form:
+                      display: 'Contact Form'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            default: 'Contact Us'
+                            antlers: false
+                            type: text
+                            display: Title
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: description
+                          field:
+                            default: "Get in touch with us! Fill out our contact form below to inquire about our services, schedule an appointment, or share your feedback. We'll respond promptly to your message. Please provide your name, email, and a brief message, and we'll be happy to assist you further."
+                            antlers: false
+                            type: textarea
+                            display: Description
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: form_heading
+                          field:
+                            input_type: text
+                            default: 'Do You have Any Questions?'
+                            antlers: false
+                            type: text
+                            display: 'Form Heading'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: form_success_message
+                          field:
+                            default: 'Form Submitted Successfully'
+                            antlers: false
+                            type: textarea
+                            display: 'Form Success Message'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            if:
+                              edit_template: 'equals true'
+                            always_save: true
+                            default: |-
+                              <!-- Contact Start -->
+                                 <div class="container-fluid contact py-5" style="background: var(--bs-primary);">
+                                  <div class="container pt-5">
+                                      <div class="row g-4 align-items-center">
+                                          <div class="col-lg-6">
+                                              <div class="text-center">
+                                                  <h1 class="display-3 text-white mb-4">{{title}}</h1>
+                                                  <p class="text-white fs-4">{{description}}</p>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-6">
+                                              <div class="contact-form rounded p-5">
+                                                  {{ form:contact_us }}
+                                                      <h1 class="display-6 mb-4">{{form_heading}}</h1>
+
+                                                      {{ if success }}
+                                                      <div class="text-success">
+                                                          {{ form_success_message }}
+                                                      </div>
+                                                  {{ else }}
+                                                     {{ if errors }}
+                                                          <div class="text-danger mb-3">
+                                                              {{ errors }}
+                                                                  {{ value }}<br>
+                                                              {{ /errors }}
+                                                          </div>
+                                                      {{ /if }}
+
+
+
+
+
+                                                      <div class="row gx-4 gy-3">
+                                                          {{ fields }}
+
+                                                          {{if type=="textarea"}}
+                                                          <div class="col-12">
+                                                              <textarea class="form-control bg-white border-0 py-3 px-4" name="{{handle}}" rows="4" cols="10" placeholder="{{placeholder}}"></textarea>
+                                                          </div>
+
+                                                          {{else}}
+                                                          <div class="col-xl-6">
+                                                              <input type="{{input_type}}" name="{{handle}}" class="form-control bg-white border-0 py-3 px-4" placeholder="{{placeholder}}{{ if validate | contains:required }}*{{/if}}">
+                                                          </div>
+
+
+                                                          {{/if}}
+
+
+                                                                                     
+                                                          {{ /fields }}
+                                                          <div class="col-12">
+                                                              <button class="btn btn-primary btn-primary-outline-0 w-100 py-3 px-5" type="submit">Submit</button>
+                                                          </div>
+                                                      </div>
+                                                      {{/if}}
+                                                  {{ /form:contact_us }}
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                    contact_details:
+                      display: 'Contact Details'
+                      instructions: null
+                      icon: phone-contact-phonebook
+                      fields:
+                        -
+                          handle: contacts
+                          field:
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  options:
+                                    fa-map-marker-alt: 'Map Marker'
+                                    fa-envelope: Envelop
+                                    fa-phone-alt: Phone
+                                  taggable: false
+                                  push_tags: false
+                                  multiple: false
+                                  clearable: false
+                                  searchable: true
+                                  cast_booleans: false
+                                  default: fa-map-marker-alt
+                                  type: select
+                                  display: iCon
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: title
+                                field:
+                                  input_type: text
+                                  default: Address
+                                  antlers: false
+                                  type: text
+                                  display: Title
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: data
+                                field:
+                                  input_type: text
+                                  default: 'Office Address'
+                                  antlers: false
+                                  type: text
+                                  display: Data
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                            mode: table
+                            reorderable: true
+                            fullscreen: true
+                            type: grid
+                            display: Contacts
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: google_map
+                          field:
+                            default: |-
+                              <iframe class="rounded-top w-100" 
+                                                          style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
+                                                          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            antlers: false
+                            type: textarea
+                            display: 'Google Map'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: follow_us_title
+                          field:
+                            input_type: text
+                            default: 'Follow Us'
+                            antlers: false
+                            type: text
+                            display: 'Follow us Title'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: social_links
+                          field:
+                            fields:
+                              -
+                                handle: icon
+                                field:
+                                  options:
+                                    fa-facebook-f: Facebook
+                                    fa-twitter: Twitter
+                                    fa-instagram: Instagram
+                                    fa-linkedin-in: 'Linked In'
+                                  taggable: false
+                                  push_tags: false
+                                  multiple: false
+                                  clearable: false
+                                  searchable: true
+                                  cast_booleans: false
+                                  default: fa-facebook-f
+                                  type: select
+                                  display: Icon
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                              -
+                                handle: url
+                                field:
+                                  input_type: text
+                                  default: 'https://www.linkedin.com/company/recolve-314-digital'
+                                  antlers: false
+                                  type: text
+                                  display: URL
+                                  listable: hidden
+                                  instructions_position: above
+                                  visibility: visible
+                                  replicator_preview: true
+                                  hide_display: false
+                            mode: table
+                            reorderable: true
+                            fullscreen: true
+                            type: grid
+                            display: 'Social Links'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <div class="container-fluid pb-5">
+                                  <div class="container py-5">
+                                      <div class="row g-4 align-items-center">
+                                          <div class="col-12">
+                                              <div class="row g-4">
+                                                  {{contacts}}
+                                                  <div class="col-lg-4">
+                                                      <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
+                                                          <i class="fas {{icon}} fa-2x text-primary me-4"></i>
+                                                          <div>
+                                                              <h4>{{title}}</h4>
+                                                              <p class="mb-0">{{data}}</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  {{/contacts}}
+                                                
+                                              </div>
+                                          </div>
+                                          <div class="col-12">
+                                              <div class="rounded">
+                                                  {{google_map}}
+                                              </div>
+                                              <div class=" text-center p-4 rounded-bottom bg-primary">
+                                                  <h4 class="text-white fw-bold">{{follow_us_title}}</h4>
+                                                  <div class="d-flex align-items-center justify-content-center">
+                                                      {{social_links}}
+                                                      <a href="{{url}}" target="_blank" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab {{icon}}"></i></a>
+                                                      {{/social_links}}</div>   
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            if:
+                              edit_template: 'equals true'
+                            always_save: true
+                    search_result:
+                      display: 'Search Result'
+                      instructions: null
+                      icon: search-magnifying-glass
+                      fields:
+                        -
+                          handle: image_1
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: 'Image 1'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: image_2
+                          field:
+                            max_files: 1
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            show_set_alt: true
+                            type: assets
+                            display: 'Image 2'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: youtube_video_link
+                          field:
+                            input_type: text
+                            default: 'https://www.youtube.com/embed/82eLC8SzEvE?si=8mK_evhU0s9l4i_l'
+                            antlers: false
+                            type: text
+                            display: 'Youtube Video Link'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: title
+                          field:
+                            input_type: text
+                            default: 'Search Result'
+                            antlers: true
+                            type: text
+                            display: 'Search Result Found for {{ get:q }}'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: edit_template
+                          field:
+                            default: false
+                            type: toggle
+                            display: 'Edit Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                        -
+                          handle: custom_template
+                          field:
+                            default: |-
+                              <!-- Search Start --> 
+                                <div class="container-fluid about py-5">
+                                  <div class="container py-5">
+                                      <div class="row g-5 align-baseline">
+                                          <div class="col-lg-5">
+                                              <div class="video">
+                                                  <img src="{{ glide:image_1 preset="service_image_1" }}" class="img-fluid rounded" alt="{{title}}">
+                                                  <div class="position-absolute rounded border-5 border-top border-start border-white" style="bottom: 0; right: 0;;">
+                                                      <img src="{{ glide:image_2 preset="service_image_2" }}" class="img-fluid rounded" alt="{{title}}" style="width: 300px; height: 200px;">
+                                                  </div>
+                                                  <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="{{youtube_video_link}}" data-bs-target="#videoModal">
+                                                      <span></span>
+                                                  </button>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-7">
+                                              <div>
+
+                                                  <h2>{{title}}</h2>
+                                              
+                                                  {{ search:results index="default" }}
+                                                  {{ if no_results }}
+                                                      <p>No results found for {{ get:q }}.</p>
+                                                  {{ else }}
+                                                     <p> <a href="{{ url }}">
+                                                          <p>{{ title }}</p>
+                                                          <p>{{ description | truncate:180 }}</p>
+                                                      </a>
+                              </p>
+                                                  {{ /if }}
+                                              {{ /search:results }}
+                                              
+                                              
+                                              </div>
+                                            
+                                          </div> 
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- Modal Video -->
+                               
+                              <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                      <div class="modal-content rounded-0">
+                                          <div class="modal-header">
+                                              <!--<h5 class="modal-title" id="exampleModalLabel">{{title_2}}</h5>-->
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                              <!-- 16:9 aspect ratio -->
+                                              <div class="ratio ratio-16x9">
+                                                  <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                                      allow="autoplay"></iframe>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- Search End -->
+                            antlers: true
+                            type: textarea
+                            display: 'Custom Template'
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
+                            always_save: true
+                            if:
+                              edit_template: 'equals true'
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+  seo:
+    display: SEO
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: seo_title
+            field:
+              input_type: text
+              default: 'Meta Title'
+              antlers: false
+              type: text
+              display: 'SEO Title'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: seo_keywords
+            field:
+              default: 'Meta Keywords'
+              antlers: false
+              type: textarea
+              display: 'SEO Keywords'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: seo_description
+            field:
+              placeholder: 'Meta Description'
+              antlers: false
+              type: textarea
+              display: 'SEO Description'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
